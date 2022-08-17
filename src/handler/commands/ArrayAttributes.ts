@@ -1,5 +1,6 @@
 //Commands and Events
 import { S_ConsoleCommand } from '../../commands/slash/console';
+import { E_HelpMenu } from '../../events/helpCommandMenu';
 import { E_ClientReady } from '../../events/ready';
 import { SlashCommand } from '../../types/commands';
 import { DiscordEvent } from '../../types/event';
@@ -12,4 +13,5 @@ export const EventsRaw: DiscordEvent[] = [
     E_SlashCommandRegister,
     E_ApplicationCommandListener,
     E_ClientReady,
+    E_HelpMenu,
 ];

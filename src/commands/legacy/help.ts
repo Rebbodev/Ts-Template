@@ -1,6 +1,6 @@
 import { ActionRowBuilder, EmbedBuilder, SelectMenuBuilder } from 'discord.js';
 
-import { CategoryObjectArray as CategoryObjectArray } from '../../handler/commands/Legacy';
+import { CategoryObjectArray } from '../../handler/commands/Legacy';
 import { botClient } from '../../index';
 import { LegacyCommand } from '../../types/commands';
 import { Prefix } from '../../util/settings.json';
@@ -14,8 +14,6 @@ export const L_HelpCommand: LegacyCommand = {
     name: 'help',
     description: 'Help command for [Bot Name]',
     syntax: '[category]',
-    category: 'test',
-    requiredRoles: { roles: ['1003880910908833844'] },
     run: async (message, arguments_) => {
         const DisplayEmbed = new EmbedBuilder()
             .setAuthor({
